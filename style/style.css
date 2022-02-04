@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    box-sizing: border-box;
+}
+
+:root{
+    --sideWidth: 2rem;
+    --headerHeight: 4rem;
+    --footerHeight: 4rem;
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: var(--headerHeight);
+    width: calc(100% - var(--sideWidth)); 
+}
+
+main{
+    font-size: 0; /* perchè ho usato gli inline block come macro-container*/
+}
+
+aside{
+    display: inline-block;
+    height: calc(100vh - var(--footerHeight));
+    width: var(--sideWidth);
+}
+
+main .songs-container{
+    display: inline-block;
+    height: calc(100vh - var(--footerHeight));
+    width: calc(100% - var(--sideWidth));
+
+    overflow-y: auto; /*scrollbar che compare solo se necessario*/
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    height: var(--footerHeight);
+    width: 100%;
+}
+
+/* DEBUG */
+.debug header{
+    background-color: blue;
+}
+
+.debug aside{
+    background-color: red;
+}
+
+.debug main div{
+    background-color: yellow;
+}
+
+.debug footer{
+    background-color: grey;
+}
+
+
+
