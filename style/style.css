@@ -68,11 +68,16 @@ aside{
     height: calc(100vh - var(--footerHeight));
     width: var(--sideWidth);
 
-    padding: .5em .70em;
+    /* padding: .5em .70em; */
+
+    background-color: black;
 }
 
-aside img + *{
-    margin-top: 1rem;
+.user-menu li{
+    padding: .5em .70em;
+}
+.user-menu li:hover{
+    cursor: pointer;
 }
 
 .down-img{
@@ -87,6 +92,10 @@ aside img + *{
     border-radius: 50%;
     width: 2em;
 }
+
+
+
+
 
 main .songs-container{
     position: fixed;
@@ -120,7 +129,7 @@ footer{
 }
 
 .debug aside{
-    background-color: red;
+    /* background-color: red; */
 }
 
 .debug main div{
