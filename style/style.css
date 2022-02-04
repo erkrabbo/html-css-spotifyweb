@@ -44,6 +44,10 @@ h2, h3{
     display: flex;
 }
 
+.circle{
+    border-radius: 50%;
+}
+
 
 
 header{
@@ -114,14 +118,14 @@ aside{
 .user-img{
     height: 2em;
     background-color: grey;
-    border-radius: 50%;
+
     width: 2em;
 }
 
 
 
 .songs-container > *+* {  /*ogni figlio diretto tranne il primo avrà un margin-top di 1rem*/
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 main .songs-container{
@@ -157,6 +161,9 @@ main .songs-container{
     width: 100%;
 }
 
+.songList h3{
+    text-transform: capitalize;
+}
 
 
 
