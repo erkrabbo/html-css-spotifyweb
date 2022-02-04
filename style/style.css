@@ -21,11 +21,18 @@ html{
 }
 
 
+
+
+
 /* COMMON */
 h2, h3{
     color: white;
     font-weight: 800;
 }
+
+
+
+
 
 /* UTILITY */
 .pTop{
@@ -50,7 +57,11 @@ h2, h3{
 
 
 
-header{
+
+
+
+
+.banner-top{
     position: fixed;
     top: 0;
     right: 0;
@@ -84,13 +95,12 @@ header{
 
 
 
-aside{
+header {
     position: fixed;
     top: 0;
     left: 0;
 
-    display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: space-between;
     
 
@@ -102,20 +112,20 @@ aside{
     background-color: black;
 }
 
-.user-menu li{
+.user-menu li {
     padding: .5em .70em;    /*usabilità migliorata per touchscreen*/
 }
 .user-menu li:hover{
     cursor: pointer;    /*per far capire che è cliccabile*/
 }
 
-.down-img{
+.down-img {
     height: 1.5em;
     width: 1.5em;
     transform: translate(3px);
 }
 
-.user-img{
+.user-img {
     height: 2em;
     background-color: grey;
 
@@ -187,7 +197,7 @@ footer{
     /* background-color: red; */
 }
 
-.debug main section{
+.debug main .songs-container{
     background-color: #141922;
 }
 
