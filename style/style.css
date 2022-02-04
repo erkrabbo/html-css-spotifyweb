@@ -7,7 +7,7 @@
 }
 
 :root{
-    --sideWidth: 3rem;
+    --sideWidth: 3.5rem;
     --headerHeight: 6rem;
     --footerHeight: 6rem;
 }
@@ -54,18 +54,45 @@ header{
 
 
 
-main{
-    font-size: 0; /* perchè ho usato gli inline block come macro-container*/
-}
 
 aside{
-    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+
     height: calc(100vh - var(--footerHeight));
     width: var(--sideWidth);
+
+    padding: .5em .70em;
+}
+
+aside img + *{
+    margin-top: 1rem;
+}
+
+.down-img{
+    height: 1.5em;
+    width: 1.5em;
+    transform: translate(3px);
+}
+
+.user-img{
+    height: 2em;
+    background-color: grey;
+    border-radius: 50%;
+    width: 2em;
 }
 
 main .songs-container{
-    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+
     height: calc(100vh - var(--footerHeight));
     width: calc(100% - var(--sideWidth));
 
