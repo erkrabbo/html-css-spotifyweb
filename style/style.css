@@ -7,23 +7,52 @@
 }
 
 :root{
-    --sideWidth: 2rem;
-    --headerHeight: 4rem;
-    --footerHeight: 4rem;
+    --sideWidth: 3rem;
+    --headerHeight: 6rem;
+    --footerHeight: 6rem;
 }
 
 html{
     font-size: 16px;
 }
 
+
+
+
+
 header{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
     height: var(--headerHeight);
-    width: calc(100% - var(--sideWidth)); 
+    width: calc(100% - var(--sideWidth));
+
+    background-color: rgba(0, 0, 0, .5);
 }
+
+.upgrade-account{
+
+    margin-right: .5em;
+    padding: 1em 3.5em;
+
+    border: 1px solid white;
+    border-radius: 2em;
+
+    text-transform: uppercase;
+    color: white;
+
+    background-color: rgba(0, 0, 0, .5);
+
+
+}
+
+
 
 main{
     font-size: 0; /* perchè ho usato gli inline block come macro-container*/
@@ -43,18 +72,24 @@ main .songs-container{
     overflow-y: auto; /*scrollbar che compare solo se necessario*/
 }
 
+
+
+
+
 footer{
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 49;
 
     height: var(--footerHeight);
     width: 100%;
 }
 
+
 /* DEBUG */
 .debug header{
-    background-color: blue;
+    /* background-color: #141922; */
 }
 
 .debug aside{
@@ -62,7 +97,7 @@ footer{
 }
 
 .debug main div{
-    background-color: yellow;
+    background-color: #141922;
 }
 
 .debug footer{
