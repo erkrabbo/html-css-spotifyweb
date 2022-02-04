@@ -22,12 +22,8 @@ html{
 
 
 /* COMMON */
-.uppercase{
-    text-transform: uppercase;
-}
-
 h2, h3{
-    color: black;
+    color: white;
     font-weight: 800;
 }
 
@@ -40,6 +36,13 @@ h2, h3{
     text-align: center;
 }
 
+.uppercase{
+    text-transform: uppercase;
+}
+
+.flex{
+    display: flex;
+}
 
 
 
@@ -138,6 +141,21 @@ main .songs-container{
     display: inline-block;
 }
 
+.songList{
+    margin-top: 1rem;
+
+    flex-wrap: wrap;
+}
+
+.songList div{
+    text-align: center;
+    margin-right: 1rem;
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.songList img{
+    width: 100%;
+}
 
 
 
@@ -163,7 +181,7 @@ footer{
 }
 
 .debug main section{
-    /* background-color: #141922; */
+    background-color: #141922;
 }
 
 .debug footer{
