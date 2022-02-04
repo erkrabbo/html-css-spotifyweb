@@ -13,9 +13,32 @@
 }
 
 html{
+    font-family: 'Signika', sans-serif;
     font-size: 16px;
+    color: grey;
+
+    line-height: 1.5;   /*migliora la leggibilità*/
 }
 
+
+/* COMMON */
+.uppercase{
+    text-transform: uppercase;
+}
+
+h2, h3{
+    color: black;
+    font-weight: 800;
+}
+
+/* UTILITY */
+.pTop{
+    padding-top: calc(var(--headerHeight) + .70em);
+}
+
+.txtCenter{
+    text-align: center;
+}
 
 
 
@@ -44,7 +67,6 @@ header{
     border: 1px solid white;
     border-radius: 2em;
 
-    text-transform: uppercase;
     color: white;
 
     background-color: rgba(0, 0, 0, .5);
@@ -74,10 +96,10 @@ aside{
 }
 
 .user-menu li{
-    padding: .5em .70em;
+    padding: .5em .70em;    /*usabilità migliorata per touchscreen*/
 }
 .user-menu li:hover{
-    cursor: pointer;
+    cursor: pointer;    /*per far capire che è cliccabile*/
 }
 
 .down-img{
@@ -95,7 +117,9 @@ aside{
 
 
 
-
+.songs-container > *+* {  /*ogni figlio diretto tranne il primo avrà un margin-top di 1rem*/
+    margin-top: 1rem;
+}
 
 main .songs-container{
     position: fixed;
@@ -105,7 +129,13 @@ main .songs-container{
     height: calc(100vh - var(--footerHeight));
     width: calc(100% - var(--sideWidth));
 
+    padding: 0 1rem;
+
     overflow-y: auto; /*scrollbar che compare solo se necessario*/
+}
+
+.songs-container li{
+    display: inline-block;
 }
 
 
@@ -132,8 +162,8 @@ footer{
     /* background-color: red; */
 }
 
-.debug main div{
-    background-color: #141922;
+.debug main section{
+    /* background-color: #141922; */
 }
 
 .debug footer{

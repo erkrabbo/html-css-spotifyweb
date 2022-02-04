@@ -7,15 +7,20 @@
     <title>Spotify</title>
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="debug">
 
     <header>
-        <button class="upgrade-account">effettua l'upgrade</button>
+        <button class="upgrade-account uppercase">effettua l'upgrade</button>
     </header>
-    
+
     <main>
+        <!-- menù a lato -->
         <aside class="user-menu">
+            <!-- icone superiori -->
             <nav>
                 <ul>
                     <li><img src="img/logo-small.svg" alt=""></li>
@@ -24,7 +29,7 @@
                     <li><img src="img/libreria.svg" alt=""></li>
                 </ul>
             </nav>
-
+            <!-- icone inferiori -->
             <nav>
                 <ul>
                     <li><img class="down-img" src="img/download.svg" alt=""></li>
@@ -33,9 +38,22 @@
             </nav>
         </aside>
 
-        <div class="songs-container">
+        <!-- container canzoni -->
+        <section class="songs-container">
+            <ul class="user-menu uppercase pTop txtCenter">
+                <li>in evidenza</li>
+                <li>podcast</li>
+                <li>classifiche</li>
+                <li>generi e mood</li>
+                <li>nuove uscite</li>
+                <li>scopri</li>
+            </ul>
 
-        </div>
+            <h2>Recently played</h2>
+            
+
+
+        </section>
     </main>
     <footer></footer>
 
