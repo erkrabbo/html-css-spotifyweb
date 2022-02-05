@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    box-sizing: border-box;
+}
+
+:root{
+    --sideWidth: 3.5rem;
+    --headerHeight: 6rem;
+    --footerHeight: 6rem;
+}
+
+html{
+    font-family: 'Signika', sans-serif;
+    font-size: 16px;
+    color: grey;
+
+    height: 100vh;
+
+    line-height: 1.5;   /*migliora la leggibilità*/
+}
+
+
+
+
+
+/* COMMON */
+h2, h3{
+    color: white;
+    font-weight: 800;
+}
+
+
+
+
+
+/* UTILITY */
+.pTop{
+    padding-top: calc(var(--headerHeight) + .70em);
+}
+
+.txtCenter{
+    text-align: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.flex{
+    display: flex;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.banner-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: var(--headerHeight);
+    width: calc(100% - var(--sideWidth));
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.upgrade-account{
+
+    margin-right: .5em;
+    padding: 1em 3.5em;
+
+    border: 1px solid white;
+    border-radius: 2em;
+
+    color: white;
+
+    background-color: rgba(0, 0, 0, .5);
+
+
+}
+
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    height: calc(100% - var(--footerHeight));
+    width: var(--sideWidth);
+
+    /* padding: .5em .70em; */
+
+    background-color: black;
+}
+
+.user-menu li {
+    padding: .5em .70em;    /*usabilità migliorata per touchscreen*/
+}
+.user-menu li:hover{
+    cursor: pointer;    /*per far capire che è cliccabile*/
+}
+
+.down-img {
+    height: 1.5em;
+    width: 1.5em;
+    transform: translate(3px);
+}
+
+.user-img {
+    height: 2em;
+    background-color: grey;
+
+    width: 2em;
+}
+
+
+
+.songs-container > *+* {  /*ogni figlio diretto tranne il primo avrà un margin-top di 1rem*/
+    margin-top: 3rem;
+}
+
+main .songs-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: calc(100% - var(--footerHeight));
+    width: calc(100% - var(--sideWidth));
+
+    padding: 0 1rem;
+
+    overflow-y: auto; /*scrollbar che compare solo se necessario*/
+}
+
+.songs-container li{
+    display: inline-block;
+}
+
+.songList{
+    margin-top: 1rem;
+
+    flex-wrap: wrap;
+
+    margin-right: -1rem;
+}
+
+.songList div{
+    text-align: center;
+    margin-right: 1rem;
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.songList img{
+    width: 100%;
+}
+
+.songList h3{
+    text-transform: capitalize;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 49;
+
+    height: var(--footerHeight);
+    width: 100%;
+}
+
+
+/* DEBUG */
+.debug header{
+    /* background-color: #141922; */
+}
+
+.debug aside{
+    /* background-color: red; */
+}
+
+.debug main .songs-container{
+    background-color: #141922;
+}
+
+.debug footer{
+    background-color: grey;
+}
+
+
+
