@@ -20,6 +20,9 @@ html{
     line-height: 1.5;   /*migliora la leggibilità*/
 }
 
+body{
+    height: 100vh;
+}
 
 
 
@@ -106,7 +109,7 @@ header {
     justify-content: space-between;
     
 
-    height: calc(100vh - var(--footerHeight));
+    height: calc(100% - var(--footerHeight));
     width: var(--sideWidth);
 
     /* padding: .5em .70em; */
@@ -145,7 +148,7 @@ main .songs-container{
     top: 0;
     right: 0;
 
-    height: calc(100vh - var(--footerHeight));
+    height: calc(100% - var(--footerHeight));
     width: calc(100% - var(--sideWidth));
 
     padding: 0 1rem;
