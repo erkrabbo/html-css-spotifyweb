@@ -9,7 +9,7 @@
 :root{
     --sideWidth: 3.5rem;
     --headerHeight: 6rem;
-    --footerHeight: 6rem;
+    --footerHeight: 5rem;
 }
 
 html{
@@ -74,12 +74,14 @@ h2, h3{
     height: var(--headerHeight);
     width: calc(100% - var(--sideWidth));
 
+    overflow-x: hidden;
+
     background-color: rgba(0, 0, 0, .5);
 }
 
 .upgrade-account{
 
-    margin-right: .5em;
+    margin-right: 1.3em;
     padding: 1em 3.5em;
 
     border: 1px solid white;
@@ -157,6 +159,7 @@ main .songs-container{
 
 .songList{
     margin-top: 1rem;
+    margin-right: -1rem;
 
     flex-wrap: wrap;
 }
@@ -183,9 +186,100 @@ footer{
     left: 0;
     z-index: 49;
 
+    align-items: center;
+    justify-content: space-between;
+
     height: var(--footerHeight);
     width: 100%;
+
+    padding: 1rem .5rem;
 }
+
+.actually-playing{
+    height: 100%;
+}
+
+.actually-playing>*{
+    margin-right: .5rem;
+}
+.actually-playing img{
+    max-height: 70%;
+    align-self: center;
+}
+
+.actual-info{
+    align-self: center;
+    flex-wrap: wrap;
+
+    width: 4rem;
+}
+.actual-info h2, .actual-info h3{
+    width: 100%;
+
+    display: inline-block;
+    max-width: 9ch;
+}
+.actual-info h2{
+    font-size: .8rem;
+    line-height: 1;
+}
+.actual-info h3{
+    font-size: .7rem;
+    text-transform: capitalize;
+
+    line-height: 1.4;
+}
+
+.like-save{
+    flex-direction: column;
+
+    color: white;
+
+    justify-content: center;
+
+    margin-bottom: -.5rem;
+}
+
+.like-save>*{
+    margin-bottom: .5rem;
+}
+
+.player{
+    flex-direction: column;
+    height: 100%;
+}
+
+.controls{
+    height: 100%;
+    color: white;
+
+    flex-basis: 200px;
+}
+
+.controls>*{
+    width: 3rem;
+    text-align: center;
+}
+
+.fa-play::before{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 2px 2px 2px 1px;
+    
+}
+
+.timeline{
+    color: white;
+}
+
+.bar{
+    width: 100%;
+    height: .5rem;
+    background-color: black;
+    border-radius: 2em;
+    align-self: center;
+}
+
 
 
 /* DEBUG */
