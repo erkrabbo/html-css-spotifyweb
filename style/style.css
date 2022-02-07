@@ -64,6 +64,8 @@ h2, h3{
 
 
 
+
+
 .banner-top{
     position: fixed;
     top: 0;
@@ -119,14 +121,27 @@ header {
 
 .user-menu li {
     padding: .5em .70em;    /*usabilità migliorata per touchscreen*/
+    display: flex;
+    align-items: center;
+}
+
+.large{
+    /* display: none; */
+    margin-left: .5rem;
+    font-size: .9rem;
 }
 .user-menu li:hover{
     cursor: pointer;    /*per far capire che è cliccabile*/
 }
 
-.down-img {
-    height: 1.5em;
+.user-menu li img{
     width: 1.5em;
+    height: 1.5em;
+}
+
+.user-menu .down-img {
+    height: 1em;
+    width: 1em;
     transform: translate(3px);
 }
 
@@ -345,8 +360,10 @@ footer>*{
 }
 
 
-@media screen and (max-width: 540px) {
-    
+@media screen and (min-width: 540px) {
+    :root{
+        --sideWidth: 11rem;
+    }
 }
 
 
