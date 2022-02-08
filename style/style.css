@@ -90,9 +90,9 @@ h2, h3{
     transform: translate(-50%, -60%);
 }
 
-.fa-play.absolute::before{
+/* .fa-play.absolute::before{
     display: none;
-}
+} */
 
 .min-logo{
     min-height: 2.5rem;
@@ -122,6 +122,8 @@ h2, h3{
 
 .overlay-song{
     font-size: 3rem;
+
+    transition: all .2s ease;
 }
 
 
@@ -131,8 +133,19 @@ h2, h3{
 .overlay-song:hover img{
     opacity: .7;
 }
+
+.fa-play.absolute::before{
+
+    font-size: 0;
+
+    opacity: 0;
+
+    transition: all .2s ease;
+}
 .overlay-song:hover .fa-play.absolute::before{
-    display: block;
+
+    opacity: 1;
+    font-size: 3rem;
 }
 
 .this-category{
@@ -174,6 +187,8 @@ h2, h3{
     color: white;
 
     background-color: rgba(0, 0, 0, .5);
+
+    transition: all .2s ease;
 }
 
 .upgrade-account:hover{
@@ -493,7 +508,7 @@ footer>*{
     margin-right: .5rem;
 }
 
-.device-volume :last-child{
+.device-volume:last-child{
     margin-left: -.2rem;
 }
 
