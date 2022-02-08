@@ -82,8 +82,16 @@ h2, h3{
 
 .absolute{
     position: absolute;
-    /* top:0;
-    left: 0; */
+    top:50%;
+    left: 50%;
+
+    z-index: 3;
+
+    transform: translate(-50%, -50%);
+}
+
+.fa-play.absolute::before{
+    display: none;
 }
 
 .min-logo{
@@ -103,7 +111,20 @@ h2, h3{
 }
 
 
+.overlay-song{
+    font-size: 3rem;
+}
 
+
+.overlay-song:hover, .song-info:hover{
+    cursor: pointer;
+}
+.overlay-song:hover img{
+    opacity: .7;
+}
+.overlay-song:hover .fa-play.absolute::before{
+    display: block;
+}
 
 
 
