@@ -514,6 +514,7 @@ footer .underlineHov:hover{
     position: absolute;
     top: 0;
     left: 0;
+    
 
     transition: all .2s ease;
 }
@@ -532,6 +533,7 @@ footer .underlineHov:hover{
     
     transform: translate(0, calc(-50% + 0.15rem));
 
+
     transition: left .2s ease;
 }
 
@@ -541,11 +543,13 @@ footer .underlineHov:hover{
 
 .bar:hover .elapsed-time{
     width: 40%;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.79);
 }
 
 .bar:hover .thumb{
     width: 1rem;
     left: calc(40% - .5rem);
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.79);
 }
 /* DEBUG */
 .debug header{
