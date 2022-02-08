@@ -486,6 +486,15 @@ footer>*{
     margin-left: -.2rem;
 }
 
+footer .grey:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+footer .underlineHov:hover{
+    text-decoration: underline;
+}
+
 
 /* DEBUG */
 .debug header{
