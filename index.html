@@ -15,77 +15,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="debug">
+    
+     <!-- BANNER UPGRADE -->
+     <div class="banner-top">
+        <button class="upgrade-account uppercase">effettua l'upgrade</button>
+    </div>
 
-     <!-- MENU A LATO -->
+    <main>
+        <!-- MENU A LATO -->
      <header class="user-menu flex">
-        <!-- icone superiori -->
-        <nav class="flex column">
-            <ul class="flex column min-logo overHidden">
-                <li>
-                    <img class="logo-small" src="img/logo-small.svg" alt="">
-                    <img class="logo-big" src="img/logo.svg" alt="">
-                </li>
-                <li class="grey this-section">
-                    <img src="img/home.svg" alt="">
-                    <span class="large">Home</span>
-                </li>
-                <li class="grey">
-                    <img src="img/search.svg" alt="">
-                    <span class="large">Cerca</span>
-                </li>
-                <li class="grey">
-                    <img src="img/libreria.svg" alt="">
-                    <span class="large">La tua libreria</span>
-                </li>
-                <li class="playlist flex column large min-0">
-                    <h2 class="uppercase">playlist</h2>
+         <!-- icone superiori -->
+            <nav class="flex column">
+                <ul class="flex column min-logo overHidden">
+                    <li>
+                        <img class="logo-small" src="img/logo-small.svg" alt="">
+                        <img class="logo-big" src="img/logo.svg" alt="">
+                    </li>
+                    <li class="grey this-section">
+                        <img src="img/home.svg" alt="">
+                        <span class="large">Home</span>
+                    </li>
+                    <li class="grey">
+                        <img src="img/search.svg" alt="">
+                        <span class="large">Cerca</span>
+                    </li>
+                    <li class="grey">
+                         <img src="img/libreria.svg" alt="">
+                        <span class="large">La tua libreria</span>
+                    </li>
+                    <li class="playlist flex column large min-0">
+                        <h2 class="uppercase">playlist</h2>
 
-                    <ul class="flex column overHidden">
-                        <li class="grey">
-                            <i class="fas fa-plus"></i>
-                            <span>Crea Playlist</span>
-                        </li>
-                        <li class="flex column min-0 scroll">
-                            <ul class="min-0">
-                                <li class="grey">nome playlist</li>
-                                <li class="grey">nome playlist</li>
-                                <li class="grey">nome playlist</li>
-                                <li class="grey">nome playlist</li>
-                                <li class="grey">nome playlist</li>
-                                <li class="grey">nome playlist</li>
-                                <li class="grey">nome playlist</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                        <ul class="flex column overHidden">
+                            <li class="grey">
+                                <i class="fas fa-plus"></i>
+                                <span>Crea Playlist</span>
+                            </li>
+                            <li class="flex column min-0 scroll">
+                                <ul class="min-0">
+                                    <li class="grey">nome playlist</li>
+                                    <li class="grey">nome playlist</li>
+                                    <li class="grey">nome playlist</li>
+                                    <li class="grey">nome playlist</li>
+                                    <li class="grey">nome playlist</li>
+                                    <li class="grey">nome playlist</li>
+                                    <li class="grey">nome playlist</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
     
          <!-- icone inferiori -->
 
-            <ul>
-                <li class="grey">
-                    <img class="down-img" src="img/download.svg" alt="">
-                    <span class="large" >Installa App</span>
-                </li>
-                <li class="profile">
-                    <img class="user-img circle" src="img/profile.svg" alt="">
-                    <span class="large" >John Doe</span>
-                </li>
-            </ul>    
-        </nav>
-    </header>
+                <ul>
+                    <li class="grey">
+                        <img class="down-img" src="img/download.svg" alt="">
+                        <span class="large" >Installa App</span>
+                    </li>
+                    <li class="profile">
+                        <img class="user-img circle" src="img/profile.svg" alt="">
+                        <span class="large" >John Doe</span>
+                    </li>
+                </ul>    
+            </nav>
+        </header>
 
-    <main>
-        <!-- BANNER UPGRADE -->
-        <div class="banner-top">
-            <button class="upgrade-account uppercase">effettua l'upgrade</button>
-        </div>
-
-        <!-- CONTAINER CANZONI -->
+            <!-- CONTAINER CANZONI -->
         <div class="songs-container">
             <nav class="flex column">
                 <ul class="user-menu uppercase pTop txtCenter">
-                    <li class="grey">in evidenza</li>
+                    <li class="grey">
+                        in evidenza
+                        <div class="this-category"></div>
+                    </li>
                     <li class="grey">podcast</li>
                     <li class="grey">classifiche</li>
                     <li class="grey">generi e mood</li>
@@ -93,6 +96,7 @@
                     <li class="grey">scopri</li>
                 </ul>
             </nav>
+        
 
             <section>
                 <h2>Recently played</h2>
@@ -114,7 +118,7 @@
                             <img src="img/stranger.jpeg" alt="">
                             <i class="fas fa-play absolute"></i>                            
                         </div>
-                        
+                            
 
                         <div class="song-info">
                             <h3>stranger things vol.1(a netflix original series soundtrack)</h3>
@@ -127,7 +131,7 @@
                             <img src="img/aquietplace.jpeg" alt="">
                             <i class="fas fa-play absolute"></i>                            
                         </div>
-                        
+                            
 
                         <div class="song-info">
                             <h3>a quiet place</h3>
@@ -140,7 +144,7 @@
                             <img src="img/split.jpeg" alt="">
                             <i class="fas fa-play absolute"></i>                            
                         </div>
-                        
+                            
 
                         <div class="song-info">
                             <h3>split </h3>
@@ -153,7 +157,7 @@
                             <img src="img/cure.jpeg" alt="">
                             <i class="fas fa-play absolute"></i>                            
                         </div>
-                        
+                            
 
                         <div class="song-info">
                             <h3>a cure for wellness</h3>
@@ -166,7 +170,7 @@
                             <img src="img/sinister.jpeg" alt="">
                             <i class="fas fa-play absolute"></i>                            
                         </div>
-                        
+                            
 
                         <div class="song-info">
                             <h3>sinister</h3>
@@ -205,7 +209,7 @@
                         
                     </div>
                 </div>
-            </section>
+            </section>    
 
             <section>
                 <h2>Artisti più popolari</h2>
@@ -235,7 +239,7 @@
                         
                     </div>
                 </div>
-            </section>
+            </section>    
         </div>
     </main>
     <footer class="flex">
