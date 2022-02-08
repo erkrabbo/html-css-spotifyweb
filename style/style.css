@@ -61,7 +61,30 @@ h2, h3{
     border-radius: 50%;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
 
+.min-0{
+    min-height: 0;
+}
+
+.overHidden{
+    overflow: hidden;
+}
+.scroll{
+    overflow: auto;
+}
+
+.rel{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    /* top:0;
+    left: 0; */
+}
 
 
 
@@ -122,6 +145,28 @@ header {
     background-color: black;
 }
 
+nav{
+    justify-content: space-between;
+    flex-basis: 100%;
+
+    min-height: 0;
+}
+
+nav ul li .logo-big{
+    width: auto;
+    height: 2rem;
+
+    display: none;
+}
+
+nav .last{
+    flex-shrink: 0;
+}
+
+ul>ul{
+    min-height: 0;
+}
+
 .user-menu li {
     padding: .5em .70em;    /*usabilità migliorata per touchscreen*/
     display: flex;
@@ -155,12 +200,23 @@ header {
     width: 2em;
 }
 
+
+
+
 li.playlist{
     flex-direction: column;
     align-items: flex-start;
 
+    flex-shrink: 1;
+
     margin: 0;
     display: none;
+
+    text-transform: capitalize;
+}
+
+li.playlist:hover{
+    cursor: default;
 }
 
 .playlist li {
@@ -244,6 +300,8 @@ footer{
     width: 100%;
 
     padding: 1rem .5rem;
+
+    background-color: #282828;
 }
 
 footer>*{
@@ -389,7 +447,7 @@ footer>*{
 }
 
 .debug footer{
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 
@@ -404,6 +462,15 @@ footer>*{
 
     .large{
         display: flex;
+    }
+
+    .logo-small{
+        display: none;
+    }
+
+    nav ul li .logo-big{
+        display: flex;
+        /* width: auto; */
     }
 }
 
