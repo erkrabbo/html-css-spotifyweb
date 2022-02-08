@@ -15,7 +15,7 @@
 html{
     font-family: 'Signika', sans-serif;
     font-size: 16px;
-    color: grey;
+    color: white;
 
     line-height: 1.5;   /*migliora la leggibilità*/
 }
@@ -88,6 +88,14 @@ h2, h3{
 
 .min-logo{
     min-height: 2.5rem;
+}
+
+.grey{
+    opacity: .80;
+}
+
+.user-menu .this-section{
+    border-left-color: blue;
 }
 
 
@@ -169,14 +177,12 @@ nav .last{
     flex-shrink: 0;
 }
 
-ul>ul{
-    min-height: 0;
-}
-
 .user-menu li {
     padding: .5em .70em;    /*usabilità migliorata per touchscreen*/
     display: flex;
     align-items: center;
+
+    border: 0.3em solid transparent;
 }
 
 .large{
@@ -186,6 +192,7 @@ ul>ul{
 }
 .user-menu li:hover{
     cursor: pointer;    /*per far capire che è cliccabile*/
+    opacity: 1;
 }
 
 .user-menu li img{
