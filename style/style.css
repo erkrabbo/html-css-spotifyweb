@@ -82,12 +82,12 @@ h2, h3{
 
 .absolute{
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
 
     z-index: 3;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
 }
 
 .fa-play.absolute::before{
@@ -100,6 +100,15 @@ h2, h3{
 
 .grey{
     opacity: .80;
+}
+
+.darkGrey{
+    opacity: .4;
+}
+
+.subtitle{
+    font-size: .9rem;
+    /* text-transform: capitalize; */
 }
 
 .user-menu .this-section{
@@ -571,7 +580,10 @@ footer .underlineHov:hover{
 
     nav ul li .logo-big{
         display: flex;
-        /* width: auto; */
+    }
+
+    .actual-info h2, .actual-info h3{
+        max-width: 10ch;
     }
 }
 
